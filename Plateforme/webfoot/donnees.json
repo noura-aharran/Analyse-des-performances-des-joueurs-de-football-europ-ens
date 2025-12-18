@@ -1,0 +1,81 @@
+[
+    {
+        "user_id": "c7960b3a-32b0-4268-bab6-ba4ec5a0a3e4",
+        "Matches_Played": 2.0,
+        "Assists": 4.0,
+        "Goals_Assists": 5.0,
+        "Non_Penalty_Goals": 6.0,
+        "Penalty_Goals": 7.0,
+        "Penalties_Attempted": 7.0,
+        "Expected_Goals": 5.0,
+        "Non_Penalty_xG": 7.0,
+        "Non_Penalty_xG_plus_xAG": 5.0,
+        "Progressive_Receptions": 3.0,
+        "Goals": 10.022144400894792
+    },
+    {
+        "user_id": "d6a4a682-9aec-40ea-b5a0-5438cdf1a129",
+        "Matches_Played": 1.0,
+        "Assists": 6.0,
+        "Goals_Assists": 3.0,
+        "Non_Penalty_Goals": 7.0,
+        "Penalty_Goals": 4.0,
+        "Penalties_Attempted": 8.0,
+        "Non_Penalty_xG": 8.0,
+        "Non_Penalty_xG_plus_xAG": 8.0,
+        "Progressive_Receptions": 6.0,
+        "Goals": 11.290804325212719
+    },
+    {
+        "user_id": "bd7e2024-0fee-4990-9683-3622eeb8bb31",
+        "Matches_Played": 28.0,
+        "Assists": 2.0,
+        "Goals_Assists": 7.0,
+        "Non_Penalty_Goals": 10.0,
+        "Penalty_Goals": 3.0,
+        "Penalties_Attempted": 4.0,
+        "Non_Penalty_xG": 11.0,
+        "Non_Penalty_xG_plus_xAG": 18.0,
+        "Progressive_Receptions": 130.0,
+        "Goals": 12.838951614146493
+    },
+    {
+        "user_id": "d70d2b4a-9902-4916-a21f-b09218d84435",
+        "Matches_Played": 28.0,
+        "Assists": 7.0,
+        "Goals_Assists": 15.0,
+        "Non_Penalty_Goals": 10.0,
+        "Penalty_Goals": 3.0,
+        "Penalties_Attempted": 4.0,
+        "Non_Penalty_xG": 11.0,
+        "Non_Penalty_xG_plus_xAG": 18.0,
+        "Progressive_Receptions": 130.0,
+        "Goals": 13.189596198777755
+    },
+    {
+        "user_id": "710e31a8-488d-4ac9-bb02-798987e3b434",
+        "Matches_Played": 26.0,
+        "Assists": 6.0,
+        "Goals_Assists": 8.0,
+        "Non_Penalty_Goals": 9.0,
+        "Penalty_Goals": 5.0,
+        "Penalties_Attempted": 9.0,
+        "Non_Penalty_xG": 3.0,
+        "Non_Penalty_xG_plus_xAG": 9.0,
+        "Progressive_Receptions": 4.0,
+        "Goals": 13.65075934692956
+    },
+    {
+        "user_id": "fbaded87-ec29-47d6-ad57-3fa9e23ff9fe",
+        "Matches_Played": 28.0,
+        "Assists": 7.0,
+        "Goals_Assists": 15.0,
+        "Non_Penalty_Goals": 10.0,
+        "Penalty_Goals": 3.0,
+        "Penalties_Attempted": 4.0,
+        "Non_Penalty_xG": 11.0,
+        "Non_Penalty_xG_plus_xAG": 18.0,
+        "Progressive_Receptions": 130.0,
+        "Goals": 13.189596198777755
+    }
+]

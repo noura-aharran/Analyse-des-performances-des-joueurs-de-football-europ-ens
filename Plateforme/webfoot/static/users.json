@@ -1,0 +1,8 @@
+[
+    {
+        "first_name": "OUADIA",
+        "last_name": "AMEKRRAN",
+        "email": "wadiaamekran@gmail.com",
+        "password": "scrypt:32768:8:1$U9BPWArLtijMp54C$6d9e4880370c9fcca8cf50199f6ebb6a2415741b103385c014105e92fa2eb899aabc1cd1615bece5772f7058704dd90479e95396f40177f1a093aa31cd4433ee"
+    }
+]

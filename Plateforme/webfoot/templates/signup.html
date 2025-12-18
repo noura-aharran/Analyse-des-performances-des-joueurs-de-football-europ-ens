@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('/static/images/about-img.png'); /* Vérifie le chemin si nécessaire */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 500px;
+      background: #ffffff;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      padding: 40px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .input-box {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 100%;
+    }
+
+    .checkbox {
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 12px;
+      background: #4b57ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #1e1eff;
+    }
+
+    p {
+      margin-top: 15px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    a {
+      color: #b44bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>Registration Form</h2>
+  <form id="signup-form" action="/signup" method="POST">
+    <div class="input-box">
+      <input type="text" name="first_name" placeholder="First Name" required />
+      <input type="text" name="last_name" placeholder="Last Name" required />
+    </div>
+    <input type="email" name="email" placeholder="Email" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <input type="password" name="confirm_password" placeholder="Confirm Password" required />
+    <label class="checkbox">
+      <input type="checkbox" name="terms" required />
+      I accept the Terms of Use & Privacy Policy.
+    </label>
+    <button type="submit">Register Now</button>
+    <p>Already have an account? <a href="/login">Sign In</a></p>
+  </form>
+</div>
+</body>
+</html>

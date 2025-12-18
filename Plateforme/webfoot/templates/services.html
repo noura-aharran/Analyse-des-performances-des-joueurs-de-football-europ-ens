@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> EmergencyCare+ </title>
+
+  <!-- Bootstrap core css -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+<!-- Font awesome -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+<!-- Owl Carousel (en ligne donc inchangé) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+             FootPredict+
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item ">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('index1') }}">About</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('services') }}">Services <span class="sr-only">(current)</span> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="why.html">Why Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+              </li>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+  <!-- service section -->
+
+  <!-- Inclure Font Awesome (si pas déjà fait) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<section class="service_section layout_padding">
+  <div class="service_container">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2 class="mb-4">Formulaire </h2>
+
+
+<form method="POST" action="/services" class="mb-5">
+  <!-- Première ligne -->
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <input type="number" name="Matches_Played" class="form-control" placeholder="Matches Played (Matchs joués)" min="0" required />
+    </div>
+    <div class="col-md-6">
+      <input type="number" name="Assists" class="form-control" placeholder="Assists (Passes Décisives)" min="0" required />
+    </div>
+  </div>
+
+  <!-- Deuxième ligne -->
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <input type="number" name="Goals_Assists" class="form-control" placeholder="Goals + Assists (Buts + Passes)" min="0" required />
+    </div>
+    <div class="col-md-6">
+      <input type="number" name="Non_Penalty_Goals" class="form-control" placeholder="Non-Penalty Goals (Buts hors penalty)" min="0" required />
+    </div>
+  </div>
+
+  <!-- Troisième ligne -->
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <input type="number" name="Penalty_Goals" class="form-control" placeholder="Penalty Goals (Buts sur penalty)" min="0" required />
+    </div>
+    <div class="col-md-6">
+      <input type="number" name="Penalties_Attempted" class="form-control" placeholder="Penalties Attempted (Penalty tentés)" min="0" required />
+    </div>
+  </div>
+
+  <!-- Quatrième ligne -->
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <input type="number" step="any" name="Non_Penalty_xG" class="form-control" placeholder="Non-Penalty xG (xG hors penalty)" min="0" required />
+    </div>
+    <div class="col-md-6">
+      <input type="number" step="any" name="Non_Penalty_xG_plus_xAG" class="form-control" placeholder="Non-Penalty xG + xAG (xG+xAG hors penalty)" min="0" required />
+    </div>
+  </div>
+
+  <!-- Cinquième ligne -->
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <input type="number" name="Progressive_Receptions" class="form-control" placeholder="Progressive Receptions (Réceptions progressives)" min="0" required />
+    </div>
+    <div class="col-md-6">
+      <!-- Vide pour alignement -->
+    </div>
+  </div>
+
+  <div class="text-center mt-4">
+    <button class="btn btn-primary" type="submit">Évaluer </button>
+  </div>
+</form>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+     
+            
+<script>
+  window.onload = () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const distance = urlParams.get("distance") || localStorage.getItem("distance_patient_km");
+
+    console.log("Distance récupérée :", distance);
+
+    if (distance) {
+      document.getElementById("distanceInput").value = distance;
+      localStorage.setItem("distance_patient_km", distance); // facultatif
+    }
+  };
+</script>
+
+
+
+
+</section>
